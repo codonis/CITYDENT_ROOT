@@ -1,0 +1,58 @@
+.header {
+  padding-top: 30px; }
+
+.icon-facebook {
+  background-image: url(../images/sprite.png);
+  background-position: -37px -67px;
+  width: 40px;
+  height: 40px; }
+
+.icon-fr_flag {
+  background-image: url(../images/sprite.png);
+  background-position: -37px -147px;
+  width: 30px;
+  height: 30px; }
+
+.icon-logo {
+  background-image: url(../images/sprite.png);
+  background-position: -37px 0px;
+  width: 60px;
+  height: 67px; }
+
+.icon-mail {
+  background-image: url(../images/sprite.png);
+  background-position: -97px -58px;
+  width: 30px;
+  height: 23px; }
+
+.icon-phone {
+  background-image: url(../images/sprite.png);
+  background-position: -97px -30px;
+  width: 28px;
+  height: 28px; }
+
+.icon-sa_flag {
+  background-image: url(../images/sprite.png);
+  background-position: -67px -147px;
+  width: 30px;
+  height: 30px; }
+
+.icon-scrolla {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 37px;
+  height: 204px; }
+
+.icon-uk_flag {
+  background-image: url(../images/sprite.png);
+  background-position: -97px 0px;
+  width: 30px;
+  height: 30px; }
+
+.icon-whatsapp {
+  background-image: url(../images/sprite.png);
+  background-position: -37px -107px;
+  width: 40px;
+  height: 40px; }
+
+/*# sourceMappingURL=styles.css.map */
