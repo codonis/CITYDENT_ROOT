@@ -1,3 +1,4 @@
+//Main Slider
 $(document).ready(function () {
 
     $('#slider').nivoSlider({
@@ -16,15 +17,65 @@ $(document).ready(function () {
         prevText: 'Prev',
         nextText: 'Next',
         randomStart: false,
-        beforeChange: function(){},
-        afterChange: function(){},
-        slideshowEnd: function(){},
-        lastSlide: function(){},
-        afterLoad: function(){}
-        });
-  });
+        beforeChange: function () { },
+        afterChange: function () { },
+        slideshowEnd: function () { },
+        lastSlide: function () { },
+        afterLoad: function () { }
+    });
+    $('#tabSlider').slick({
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        autoplay: true
+    });
+    $('#tabSlider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        $('.tabs__tab').removeClass('tabs__tab_active');
+        $('.tabs__tab').eq(currentSlide).addClass('tabs__tab_active');
+
+    });
+    $(".tabs__tab").click(function (e) {
+        e.preventDefault();
+        slideIndex = $(this).index();
+        $('#tabSlider').slick('slickGoTo', slideIndex);
+        $('#tabSlider').slick('slickPause');
+    });
+
+    $('#newsSlider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: $('.news-slider__prev'),
+        nextArrow: $('.news-slider__next')
+    });
 
 
+});
+
+
+$('#scrollBtn').click(function () {
+    $('html,body').animate({
+        scrollTop: $(window).height()
+    }, 500);
+});
+//Side Bar
 $('.side-panel__menu-list-item--hamburger').click(function () {
     $(this).toggleClass('active');
+    $('.side-panel').toggleClass('side-panel_open');
 });
+
+$(window).scroll(function(e){ 
+    var $el = $('.side-panel'); 
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > $('.header').height() && !isPositionFixed){ 
+      $el.css({'position': 'fixed', 'top': '0px'}); 
+    }
+    if ($(this).scrollTop() < $('.header').height() && isPositionFixed)
+    {
+      $el.css({'position': 'absolute', 'top': '0px'}); 
+    } 
+  });
