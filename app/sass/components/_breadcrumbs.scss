@@ -1,0 +1,24 @@
+.breadcrumbs{
+    margin-bottom: 40px;
+    &__list-item{
+        display: inline-block;
+    }
+    &__link{
+        color: $brand_gray;
+        font-size: 16px;
+        font-family: $font_head;
+        padding: 15px;
+        display: inline-block;
+        font-weight: bold;
+        &_start{
+            padding-left: 0;
+        }
+        &:hover{
+            color: $brand_color;
+        }
+    }
+    &__icon{
+        color: $brand_gray;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,21 @@
+body{
+    font-family: $font_copy;
+    position: relative;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    &,&:hover {
+        text-decoration: none;
+    }
+    transition: color ease .3s;
+}
+h2 {
+    margin-top: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+    color:$brand_gray;
+}

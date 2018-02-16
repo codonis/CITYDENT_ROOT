@@ -1,0 +1,7 @@
+.btn-scrolla {
+    position: absolute;
+    bottom: 12%;
+    right: 31%;
+    z-index: $zindex_side_panel - 1;
+    cursor: pointer;
+}

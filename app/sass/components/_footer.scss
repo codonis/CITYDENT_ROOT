@@ -1,0 +1,32 @@
+.footer{
+    width: 100%;
+    border-top: 1px solid $brand_gray;
+    padding: 60px 15px;
+    position: relative;
+    &__icon{
+        display: inline-block;
+    }
+    &__logo{
+        text-align: center;
+        &-location{
+            position: relative;
+            top: 0;
+            font-style: italic;
+            font-size: 18px;
+            color: $brand_gray;
+        }
+    }
+    &__copyright{
+        margin-top: 20px;
+        color: $brand_gray;
+        text-align: center;
+    }
+}
+.arma-logo{
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0px;
+
+}

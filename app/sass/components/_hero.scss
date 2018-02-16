@@ -1,0 +1,19 @@
+.hero{
+    position: relative;
+    text-align: center;
+    min-height: $hero_height;
+    &__img{
+        min-height: $hero_height;
+        @include align;
+    }
+    &__title{
+        background-color: $brand_color;
+        color: #fff;
+
+        padding: 30px 15px;
+        margin: 0;
+
+        position: absolute;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,24 @@
+.contact {
+    @include breakpoint(huges) {
+        padding-right: 40px;
+    }
+    padding-right: 90px;
+    &__item {
+        padding-left: 20px;
+        color: $brand_gray;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    &__icon {
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        left: 0;
+    }
+}

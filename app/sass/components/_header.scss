@@ -1,0 +1,22 @@
+.header {
+    padding-top: 30px;
+    border-bottom: 1px solid $brand_gray;
+    padding-left: 60px;
+    padding-right: 60px;
+    @include breakpoint(huges) {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    &__logo{
+        padding-top: 0px;
+    }
+    &-logo__location {
+        font-size: $font_logo_size;
+        color: $brand_gray;
+        font-family: $font_copy;
+        font-style: italic;
+        position: relative;
+        top: 14px;
+    }
+}

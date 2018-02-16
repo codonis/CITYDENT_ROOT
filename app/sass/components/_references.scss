@@ -1,0 +1,13 @@
+.reference {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    &__p{
+        color: $brand_dark_gray;
+        line-height: 2.2;
+        
+    }
+    &__link{
+        color: $brand_dark_gray;
+        text-decoration: underline;
+    }
+}

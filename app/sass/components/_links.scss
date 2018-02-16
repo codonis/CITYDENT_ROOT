@@ -1,0 +1,39 @@
+.links{
+    //margin-top: 100px;
+    margin-bottom: 100px;
+    &__link{
+        padding: 20px 30px;
+        display: block;
+        margin-bottom: 30px;
+        font-family: $font_head;
+        font-weight: bold;
+        font-size: 16px;
+        position: relative;
+        &_color_1{
+            background-color: $brand_blue;
+            color:darken($brand_blue, 60%);
+        }
+        &_color_2{
+            background-color: $brand_green;
+            color:darken($brand_green, 60%);
+            
+        }
+        &_color_3{
+            background-color: $brand_pink;
+            color:darken($brand_pink, 60%);
+            
+        }
+        &_color_4{
+            background-color: $brand_violet;
+            color:darken($brand_violet, 60%);
+            
+        }
+    }
+    &__icon{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.4em;
+    }
+}

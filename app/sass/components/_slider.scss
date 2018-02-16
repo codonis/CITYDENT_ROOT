@@ -1,0 +1,44 @@
+.slider-wrapper.theme-default {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    .nivoSlider {
+        box-shadow: unset;
+        @include breakpoint(huges) {
+            height: $header_content - 4.9vh;
+        }
+        height: $header_content;
+    }
+    .nivo-caption {
+        font-size: $font_size_slide_caption;
+        letter-spacing: 3px;
+        line-height: $font_size_slide_caption;
+        color: rgb(247, 247, 247);
+        font-family: $font_copy;
+        text-shadow: 0px 3px 2px rgba(1, 1, 1, 0.59);
+        background-color: rgba($brand_latte, .7);
+        padding: 40px 30px 40px 370px;
+        width: 55%;
+        bottom: 30px;
+        @include breakpoint(huges) {
+            padding: 40px 30px 40px 70px;
+            font-size: $font_size_slide_caption / 1.3;
+        }
+    }
+    & .nivo-controlNav a {
+        &,
+        &.active {
+            background: none;
+        }
+    }
+    & .nivo-controlNav a.nivo-control {
+        background: $brand_gray;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 0 8px;
+        &.active {
+            background: lighten($brand_gray, 30%);
+        }
+    }
+}

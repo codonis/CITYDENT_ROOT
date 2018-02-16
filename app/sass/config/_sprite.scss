@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arma-logo-dark-name: 'arma-logo-dark';
+$arma-logo-dark-x: 37px;
+$arma-logo-dark-y: 120px;
+$arma-logo-dark-offset-x: -37px;
+$arma-logo-dark-offset-y: -120px;
+$arma-logo-dark-width: 100px;
+$arma-logo-dark-height: 44px;
+$arma-logo-dark-total-width: 139px;
+$arma-logo-dark-total-height: 324px;
+$arma-logo-dark-image: '../images/sprite.png';
+$arma-logo-dark: (37px, 120px, -37px, -120px, 100px, 44px, 139px, 324px, '../images/sprite.png', 'arma-logo-dark', );
+$cell-phone-name: 'cell-phone';
+$cell-phone-x: 117px;
+$cell-phone-y: 164px;
+$cell-phone-offset-x: -117px;
+$cell-phone-offset-y: -164px;
+$cell-phone-width: 10px;
+$cell-phone-height: 16px;
+$cell-phone-total-width: 139px;
+$cell-phone-total-height: 324px;
+$cell-phone-image: '../images/sprite.png';
+$cell-phone: (117px, 164px, -117px, -164px, 10px, 16px, 139px, 324px, '../images/sprite.png', 'cell-phone', );
+$clock-name: 'clock';
+$clock-x: 128px;
+$clock-y: 180px;
+$clock-offset-x: -128px;
+$clock-offset-y: -180px;
+$clock-width: 10px;
+$clock-height: 10px;
+$clock-total-width: 139px;
+$clock-total-height: 324px;
+$clock-image: '../images/sprite.png';
+$clock: (128px, 180px, -128px, -180px, 10px, 10px, 139px, 324px, '../images/sprite.png', 'clock', );
+$facebook-name: 'facebook';
+$facebook-x: 37px;
+$facebook-y: 164px;
+$facebook-offset-x: -37px;
+$facebook-offset-y: -164px;
+$facebook-width: 40px;
+$facebook-height: 40px;
+$facebook-total-width: 139px;
+$facebook-total-height: 324px;
+$facebook-image: '../images/sprite.png';
+$facebook: (37px, 164px, -37px, -164px, 40px, 40px, 139px, 324px, '../images/sprite.png', 'facebook', );
+$fr-flag-name: 'fr_flag';
+$fr-flag-x: 37px;
+$fr-flag-y: 204px;
+$fr-flag-offset-x: -37px;
+$fr-flag-offset-y: -204px;
+$fr-flag-width: 30px;
+$fr-flag-height: 30px;
+$fr-flag-total-width: 139px;
+$fr-flag-total-height: 324px;
+$fr-flag-image: '../images/sprite.png';
+$fr-flag: (37px, 204px, -37px, -204px, 30px, 30px, 139px, 324px, '../images/sprite.png', 'fr_flag', );
+$location-name: 'location';
+$location-x: 127px;
+$location-y: 164px;
+$location-offset-x: -127px;
+$location-offset-y: -164px;
+$location-width: 10px;
+$location-height: 14px;
+$location-total-width: 139px;
+$location-total-height: 324px;
+$location-image: '../images/sprite.png';
+$location: (127px, 164px, -127px, -164px, 10px, 14px, 139px, 324px, '../images/sprite.png', 'location', );
+$logo-name: 'logo';
+$logo-x: 0px;
+$logo-y: 0px;
+$logo-offset-x: 0px;
+$logo-offset-y: 0px;
+$logo-width: 139px;
+$logo-height: 120px;
+$logo-total-width: 139px;
+$logo-total-height: 324px;
+$logo-image: '../images/sprite.png';
+$logo: (0px, 0px, 0px, 0px, 139px, 120px, 139px, 324px, '../images/sprite.png', 'logo', );
+$mail-name: 'mail';
+$mail-x: 65px;
+$mail-y: 234px;
+$mail-offset-x: -65px;
+$mail-offset-y: -234px;
+$mail-width: 30px;
+$mail-height: 23px;
+$mail-total-width: 139px;
+$mail-total-height: 324px;
+$mail-image: '../images/sprite.png';
+$mail: (65px, 234px, -65px, -234px, 30px, 23px, 139px, 324px, '../images/sprite.png', 'mail', );
+$phone-name: 'phone';
+$phone-x: 37px;
+$phone-y: 234px;
+$phone-offset-x: -37px;
+$phone-offset-y: -234px;
+$phone-width: 28px;
+$phone-height: 28px;
+$phone-total-width: 139px;
+$phone-total-height: 324px;
+$phone-image: '../images/sprite.png';
+$phone: (37px, 234px, -37px, -234px, 28px, 28px, 139px, 324px, '../images/sprite.png', 'phone', );
+$sa-flag-name: 'sa_flag';
+$sa-flag-x: 67px;
+$sa-flag-y: 204px;
+$sa-flag-offset-x: -67px;
+$sa-flag-offset-y: -204px;
+$sa-flag-width: 30px;
+$sa-flag-height: 30px;
+$sa-flag-total-width: 139px;
+$sa-flag-total-height: 324px;
+$sa-flag-image: '../images/sprite.png';
+$sa-flag: (67px, 204px, -67px, -204px, 30px, 30px, 139px, 324px, '../images/sprite.png', 'sa_flag', );
+$scrolla-name: 'scrolla';
+$scrolla-x: 0px;
+$scrolla-y: 120px;
+$scrolla-offset-x: 0px;
+$scrolla-offset-y: -120px;
+$scrolla-width: 37px;
+$scrolla-height: 204px;
+$scrolla-total-width: 139px;
+$scrolla-total-height: 324px;
+$scrolla-image: '../images/sprite.png';
+$scrolla: (0px, 120px, 0px, -120px, 37px, 204px, 139px, 324px, '../images/sprite.png', 'scrolla', );
+$spec-list-icon-name: 'spec-list-icon';
+$spec-list-icon-x: 117px;
+$spec-list-icon-y: 180px;
+$spec-list-icon-offset-x: -117px;
+$spec-list-icon-offset-y: -180px;
+$spec-list-icon-width: 11px;
+$spec-list-icon-height: 10px;
+$spec-list-icon-total-width: 139px;
+$spec-list-icon-total-height: 324px;
+$spec-list-icon-image: '../images/sprite.png';
+$spec-list-icon: (117px, 180px, -117px, -180px, 11px, 10px, 139px, 324px, '../images/sprite.png', 'spec-list-icon', );
+$uk-flag-name: 'uk_flag';
+$uk-flag-x: 97px;
+$uk-flag-y: 204px;
+$uk-flag-offset-x: -97px;
+$uk-flag-offset-y: -204px;
+$uk-flag-width: 30px;
+$uk-flag-height: 30px;
+$uk-flag-total-width: 139px;
+$uk-flag-total-height: 324px;
+$uk-flag-image: '../images/sprite.png';
+$uk-flag: (97px, 204px, -97px, -204px, 30px, 30px, 139px, 324px, '../images/sprite.png', 'uk_flag', );
+$whatsapp-name: 'whatsapp';
+$whatsapp-x: 77px;
+$whatsapp-y: 164px;
+$whatsapp-offset-x: -77px;
+$whatsapp-offset-y: -164px;
+$whatsapp-width: 40px;
+$whatsapp-height: 40px;
+$whatsapp-total-width: 139px;
+$whatsapp-total-height: 324px;
+$whatsapp-image: '../images/sprite.png';
+$whatsapp: (77px, 164px, -77px, -164px, 40px, 40px, 139px, 324px, '../images/sprite.png', 'whatsapp', );
+$spritesheet-width: 139px;
+$spritesheet-height: 324px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($arma-logo-dark, $cell-phone, $clock, $facebook, $fr-flag, $location, $logo, $mail, $phone, $sa-flag, $scrolla, $spec-list-icon, $uk-flag, $whatsapp, );
+$spritesheet: (139px, 324px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

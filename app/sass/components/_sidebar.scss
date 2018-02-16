@@ -1,0 +1,55 @@
+.sidebar {
+    margin-bottom: 40px;
+    padding-left: 30px;
+    &__title,
+    &__menu-link {
+        color: $brand_dark_gray;
+        font-weight: bold;
+        font-family: $font_head;
+    }
+    &__title {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__menu-link {
+        position: relative;
+        font-size: 14px;
+        padding: 15px 60px 15px 30px;
+        border-top: 1px solid lighten($brand_gray, 40%);
+        display: inline-block;
+        width: 100%;
+        &_end {
+            border-bottom: 1px solid lighten($brand_gray, 40%);
+        }
+        &:hover {
+            color: $brand_color;
+        }
+    }
+    &__menu-icon {
+        color: lighten($brand_gray, 40%);
+        font-size: 18px;
+        @include vAlign;
+        right: 15px;
+        .sidebar__menu-link:hover & {
+            color: $brand_color;
+        }
+    }
+    &__content {
+        &.side-panel__content {
+            box-shadow: none;
+            float: none;
+            width: auto;
+            padding: 30px 0;
+            .side-panel__img {
+                height: auto;
+                width: 100%;
+            }
+            .side-panel__caption{
+                font-size: 16px;
+                font-family: $font_head;
+                color: $brand_dark_gray;
+            }
+        }
+    }
+}

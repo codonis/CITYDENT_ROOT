@@ -1,0 +1,23 @@
+.spec{
+    margin-bottom: 60px;
+    &__title{
+        font-family: $font_head;
+        font-size: 16px;
+        font-weight: bold;
+        color: $brand_dark_gray;
+        margin-bottom: 30px;
+    }
+    &__list-item{
+        font-size: 14px;
+        font-family: $font_head;
+        padding-left: 40px;
+        position: relative;
+        line-height: 2;
+        &:before{
+            content: ' ';
+            @include vAlign;
+            @extend .spec-list-icon;
+            left: 20px;
+        }
+    }
+}

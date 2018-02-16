@@ -1,0 +1,47 @@
+.boxes {
+    margin-top: 60px;
+}
+
+.box {
+    box-shadow: rgba(0, 0, 0, .16) 0 4px 16px;
+    min-height: 400px;
+    margin-bottom: 100px;
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+    &__img {
+        //width: 100%;
+        min-height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.info-box {
+    padding: 40px 60px;
+    &__title {
+        font-size: 28px;
+        line-height: 1;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    &__copy {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    &,
+    &__link {
+        color: $brand_gray;
+    }
+    &__link{
+        font-size: 15px;
+        text-decoration: underline;
+        &:hover{
+            color: $brand_color;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.copy{
+    margin: 60px 0;
+    &__p{
+        line-height: 2.2;
+        color: $brand_dark_gray;
+    }
+    &__img{
+        float: left;
+        padding: 0 30px 30px;
+        &_right{
+            float: right;
+        }
+    }
+}
