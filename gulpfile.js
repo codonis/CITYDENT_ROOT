@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 	cache = require('gulp-cache'),
 	autoprefixer = require('gulp-autoprefixer'),
 	sass = require('gulp-sass'),
+	gulpImport = require('gulp-html-import'),
 	spritesmith = require('gulp.spritesmith');
 
 gulp.task('sass', function () {
@@ -55,12 +56,20 @@ gulp.task('sprite', function () {
 });
 
 
-
-gulp.task('watch', function () {
-	gulp.watch(['app/sass/**/*.scss','css/**/*'], ['sass']);
-	gulp.watch('app/js/*js', ['manage']);
-	gulp.watch(['app/fonts/*','fonts/*'], ['fonts']);
-	gulp.watch('app/images/**/*.*', ['images', 'sprite']);
+gulp.task('import', function () {
+	return gulp.src('app/*.html')
+		.pipe(gulpImport('app/temp/'))
+		.pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'sprite', 'watch']);
+
+
+gulp.task('watch', function () {
+	gulp.watch(['app/sass/**/*.scss', 'css/**/*'], ['sass']);
+	gulp.watch('app/js/*js', ['manage']);
+	gulp.watch(['app/fonts/*', 'fonts/*'], ['fonts']);
+	gulp.watch('app/images/**/*.*', ['images', 'sprite']);
+	gulp.watch(['app/temp/*.html', 'app/**/*.html'], ['import']);
+});
+
+gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import', 'sprite', 'watch']);
