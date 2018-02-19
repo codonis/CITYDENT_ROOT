@@ -11,10 +11,12 @@ $brand_latte: #cd6d57;
 //font families
 $font_head: 'SinkinSansLt', Helvetica,Arial,sans-serif;
 $font_copy: 'RubikLt',Helvetica,Arial,sans-serif;
+$font_crew_head: $font_head;
 
 //font sizes
 $font_head_size: 36px;
 $font_copy_size: 15px;
+$font_crew_head_size: 16px;
 $font_nav_size: 14px;
 $font_logo_size: 21px;
 $font_size_slide_caption: 60px;
@@ -31,6 +33,8 @@ $sidebar_width : 321px;
 //heights
 $header_content: 88.6vh;
 $hero_height: 410px;
+$about_hero_height: 77vh;
+$about_lg_hero_height: 66vh;
 
 //border sizes
 $triangle_border_size: 10px;

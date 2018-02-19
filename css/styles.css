@@ -537,7 +537,13 @@ h1, h2, h3, h4, h5, h6, p {
 .hero {
   position: relative;
   text-align: center;
-  min-height: 410px; }
+  min-height: 410px;
+  overflow: hidden; }
+  .about-us .hero {
+    min-height: 66vh; }
+    @media (max-width: 1366px) {
+      .about-us .hero {
+        min-height: 77vh; } }
   .hero__img {
     min-height: 410px;
     position: absolute;
@@ -545,6 +551,11 @@ h1, h2, h3, h4, h5, h6, p {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    .about-us .hero__img {
+      min-height: 66vh; }
+      @media (max-width: 1366px) {
+        .about-us .hero__img {
+          min-height: 77vh; } }
   .hero__title {
     background-color: #f79628;
     color: #fff;
@@ -660,6 +671,24 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0 30px 30px; }
     .copy__img_right {
       float: right; }
+
+.crew {
+  min-width: 100%; }
+  .crew__item {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative; }
+  .crew__title, .crew__subtitle {
+    font-size: 16px;
+    font-family: "SinkinSansLt", Helvetica, Arial, sans-serif;
+    margin-bottom: 18px; }
+  .crew__title {
+    font-weight: bold; }
+  .crew__subtitle {
+    font-style: italic; }
+  .crew__img {
+    width: 100%;
+    margin-top: 30px; }
 
 .arma-logo-dark {
   background-image: url(../images/sprite.png);

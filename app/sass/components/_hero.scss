@@ -1,18 +1,29 @@
-.hero{
+.hero {
     position: relative;
     text-align: center;
     min-height: $hero_height;
-    &__img{
+    overflow: hidden;
+    .about-us & {
+        min-height: $about_lg_hero_height;
+        @include breakpoint(huges) {
+            min-height: $about_hero_height;
+        }
+    }
+    &__img {
         min-height: $hero_height;
         @include align;
+        .about-us & {
+            min-height: $about_lg_hero_height;
+            @include breakpoint(huges) {
+                min-height: $about_hero_height;
+            }
+        }
     }
-    &__title{
+    &__title {
         background-color: $brand_color;
         color: #fff;
-
         padding: 30px 15px;
         margin: 0;
-
         position: absolute;
         bottom: 0;
     }
