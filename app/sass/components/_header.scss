@@ -6,10 +6,27 @@
     @include breakpoint(huges) {
         padding-left: 0;
         padding-right: 0;
-
+        min-height: 100px;
+    }
+    @include breakpoint(smalls) {
+        min-height: $header_mobile_height;
     }
     &__logo{
         padding-top: 0px;
+        width:33.333%;
+        float: left;
+        @include breakpoint(smalls) {
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            @include breakpoint(mediums) {
+                width: 200px;
+            }
+            @include breakpoint(smalls) {
+                width: 150px;
+            }
+        }
     }
     &-logo__location {
         font-size: $font_logo_size;
@@ -18,5 +35,15 @@
         font-style: italic;
         position: relative;
         top: 14px;
+
+        @include breakpoint(mediums) {
+            font-size: $font_logo_size - 4;
+        }
+        @include breakpoint(smalls) {
+            font-size: $font_logo_size - 9;
+            top: 7px;
+        }
+
+
     }
 }

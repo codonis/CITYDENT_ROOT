@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @import "head.html"
+    <title>City Dent | İletişim</title>
+</head>
+
+<body class="contact-us">
+    @import "header.html"
+    <div class="content relative">
+        <!-- Hero start -->
+        <section class="hero">
+            <img src="images/contact-hero.png" alt="Citydent Hero Image" class="hero__img">
+            <div class="container">
+                <h1 class="hero__title">İLETİŞİM</h1>
+            </div>
+        </section>
+        <!-- Hero end -->
+        <!-- Breadcrumbs start -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="#" class="breadcrumbs__link breadcrumbs__link_start">Anasayfa</a>
+                        <i class="breadcrumbs__icon fa fa-chevron-right"></i>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="#" class="breadcrumbs__link">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumbs end -->
+        <!-- Content section start -->
+        <section class="section">
+            <div class="container pb60">
+                <!-- Contact Card start -->
+                <div class="contact contact_card">
+                    <h1 class="contact__title">İletişim</h1>
+                    <div class="contact__item">
+                        <span class="contact__icon contact-location"></span>
+                        <p class="contact__copy">
+                            Cumhuriyet Caddesi No:32 Kat: 1 Taksim / İstanbul (Taksim Divan Oteli Yanı, Taksim Gezi Parkı Metro çıkışı tarafında 100
+                            m. Şişli tarafında)
+                        </p>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon contact-mail-icon"></span>
+                        <a href="mailto:bilgi@citydentistanbul.com" class="contact__link">
+                            bilgi@citydentistanbul.com
+                        </a>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon contact-phone-icon"></span>
+                        <a href="tel:90 212 238 46 72" class="contact__link">
+                            +90 212 238 46 72 / +90 212 238 46 73</a>
+                        <a href="tel:90 544 238 46 72" class="contact__link">
+                            +90 544 238 46 72 / +90 212 237 27 42
+                        </a>
+                        <a href="tel:0241 9391 7005" class="contact__link">
+                            (Almanya İçi) 0241 9391 7005
+                        </a>
+
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon contact-skype-icon"></span>
+                        <a href="skype:cCitydent34?call" class="contact__link">
+                            cCitydent34
+                        </a>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon contact-viber-icon"></span>
+                        <a href="viber://add?number=905442384672" class="contact__link">
+                            +90 544 238 46 72
+                        </a>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon contact-watsapp-icon"></span>
+                        <a href="https://api.whatsapp.com/send?phone=905442384672" class="contact__link">
+                            +90 544 238 46 72
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Contact Card end -->
+                <!-- Form start -->
+                <div class="form">
+                    <form id="contactForm">
+                        <div class="form__item">
+                            <div class="form__text">
+                                İsim (gerekli)
+                            </div>
+                            <input id="ad" name="ad" type="text" text="" class="form__input" data-validation="length alphanumeric" data-validation-length="3-12"
+                                data-validation-error-msg="Lütfen geçerli bir isim giriniz.">
+                        </div>
+                        <div class="form__item">
+                            <div class="form__text">
+                                E-Posta (gerekli)
+                            </div>
+                            <input id="mail" name="mail" type="email" text="" class="form__input" data-validation="email" data-validation-error-msg="Lütfen geçerli bir mail adresi giriniz.">
+                        </div>
+                        <div class="form__item">
+                            <div class="form__text">
+                                Cep Telefonu (gerekli)
+                            </div>
+                            <input id="tel" name="tel" type="tel" text="" class="form__input" data-validation="number" data-validation-error-msg="Lütfen geçerli bir telefon numarası giriniz.">
+                        </div>
+                        <div class="form__item">
+                            <div class="form__text">
+                                Konu (gerekli)
+                            </div>
+                            <input id="subject" name="subject" type="text" text="" class="form__input" data-validation="alphanumeric" data-validation-error-msg="Lütfen konunuzu giriniz.">
+                        </div>
+                        <div class="form__item">
+                            <div class="form__text">
+                                Mesajınız (gerekli)
+                            </div>
+                            <textarea name="mesajiniz" id="mesaj" name="mesaj" cols="30" rows="10" class="form__textarea" data-validation="alphanumeric"
+                                data-validation-error-msg="Lütfen mesajınızı giriniz."></textarea>
+                        </div>
+                        <div class="form__item">
+                            <input type="submit" id="submitButton" value="GÖNDER" class="btn_submit">
+                        </div>
+                    </form>
+                </div>
+                <!-- Form end -->
+
+            </div>
+        </section>
+        <!-- Content section end -->
+    </div>
+    @import "footer.html"
+</body>
+
+</html>

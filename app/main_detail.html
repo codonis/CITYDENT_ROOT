@@ -10,12 +10,17 @@
     @import "header.html"
     <div class="content relative">
         @import "side_panel.html"
+        <!-- Hero start -->
+        
         <section class="hero">
             <img src="images/hero.png" alt="Citydent Hero Image" class="hero__img">
             <div class="container">
                 <h1 class="hero__title">İMPLANT TEDAVİSİ</h1>
             </div>
         </section>
+                <!-- Hero end -->
+        <!-- Breadcrumbs start -->
+
         <div class="breadcrumbs">
             <div class="container">
                 <ul class="breadcrumbs__list">
@@ -29,9 +34,13 @@
                 </ul>
             </div>
         </div>
+                <!-- Breadcrumbs end -->
+        <!-- Content section start -->
+
         <section class="section">
             <div class="container">
                 <div class="col-sm-8">
+                    <!-- Spec start -->
                     <div class="spec">
                         <h2 class="spec__title">CITYDENT İMPLANT TEDAVİSİ</h2>
                         <ul class="spec__list">
@@ -49,7 +58,10 @@
                             <li class="spec__list-item">12 farklı implant seçeneği</li>
                         </ul>
                     </div>
+                    <!-- Spec end -->
+                    
                     <hr class="seperator seperator_full">
+                    <!-- Reference start -->
                     <div class="reference">
                         <h2 class="spec__title">UYGULAMASINI YAPTIĞIMIZ İMPLANT MARKALARI</h2>
                         <p class="reference__p p_big">
@@ -58,7 +70,11 @@
                             <a href="#" class="reference__link">tıklayınız</a>.
                         </p>
                     </div>
+                    <!-- Reference end -->
+                    
                     <hr class="seperator seperator_full">
+                    <!-- Copy start -->
+                    
                     <div class="copy">
                         <h2 class="spec__title">UYGULAMA ALANLARI</h2>
                         <p class="copy__p p_big">
@@ -84,12 +100,16 @@
                             lacinia.
                         </p>
                     </div>
+                    <!-- Copy end -->
+                    
                 </div>
                 <div class="col-sm-4">
                     @import "sidebar.html"
                 </div>
             </div>
         </section>
+        <!-- Content section end -->
+        
         @import "news_slider.html"
         @import "links.html"
     </div>

@@ -1,7 +1,51 @@
-.btn-scrolla {
-    position: absolute;
-    bottom: 12%;
-    right: 31%;
-    z-index: $zindex_side_panel - 1;
-    cursor: pointer;
+.btn {
+    &-scrolla {
+        position: absolute;
+        bottom: 12%;
+        right: 31%;
+        z-index: $zindex_side_panel - 1;
+        cursor: pointer;
+    }
+    &_submit {
+        background: $brand_color;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 40px;
+        font-family: $font_head;
+        font-size: 16px;
+        position: relative;
+        float: right;
+        transition: background .3s;
+        &:hover {
+            background-color: $brand_dark_gray;
+        }
+    }
+    &_hamburger {
+        position: relative;
+        left: 0;
+        width: 35px;
+        height: 23px;
+        padding: 3px;
+        display: none;
+        @include breakpoint(smalls) {
+            display: block;
+        }
+        &__line {
+            width: 20px;
+            height: $hamburger_lines;
+            background-color: #000000;
+            display: block;
+            margin-bottom: $hamburger_lines;
+            position: relative;
+            left: ($hamburger_lines + 4);
+            &_start {
+                left: 0;
+            }
+            &_end {
+                left: ($hamburger_lines + 1);
+                margin-bottom: 0;
+            }
+        }
+    }
 }

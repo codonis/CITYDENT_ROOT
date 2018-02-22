@@ -3,22 +3,59 @@
         padding-right: 40px;
     }
     padding-right: 90px;
+    &.contact_card {
+        background-color: $brand_color;
+        color: #ffffff;
+        width: 403px;
+        padding: 20px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, .4) 0 0 40px;
+        left: 17%;
+        z-index: 1;
+        float: left;
+        top: 40px;
+        * {
+            font-family: $font_head;
+        }
+    }
     &__item {
-        padding-left: 20px;
+        padding-left: 25px;
         color: $brand_gray;
         position: relative;
         margin-bottom: 20px;
         font-size: 16px;
+        .contact_card & {
+            padding-left: 50px;
+            min-height: 30px;
+            padding-top: 10px;
+        }
     }
     &__title {
         font-weight: bold;
         font-size: 16px;
         margin-bottom: 15px;
+        .contact_card & {
+            font-size: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 8px 0 10px 0;
+            font-weight: bold;
+        }
+    }
+    &__copy {
+        color: #ffffff;
+        font-size: 14px;
     }
     &__icon {
         display: inline-block;
         position: absolute;
         top: 4px;
         left: 0;
+    }
+    &__link {
+        .contact_card & {
+            color: #ffffff;
+        }
     }
 }

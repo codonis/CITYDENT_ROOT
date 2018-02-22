@@ -1,4 +1,12 @@
 .navigation {
+    float: left;
+    width: 50%;
+    @include breakpoint(larges) {
+        width: auto;
+    }
+    @include breakpoint(smalls) {
+        display: none;
+    }
     &__list {
         padding-left: 0;
     }
@@ -44,8 +52,29 @@
                 width: 80%;
             }
         }
+        .navigation_mobile &{
+            display: block;
+        }
     }
     &_footer {
         text-align: center;
+    }
+    &.navigation_mobile{
+        display: none;
+        position: absolute;
+        width: $mobile_menu;
+        left: - $mobile_menu;
+        transition: .3s ease;
+        background-color: #fff;
+        z-index: 9;
+        top: $header_mobile_height;
+        &.open{
+            left: 0;
+        }
+
+ 
+        @include breakpoint(smalls) {
+            display: block;
+        }
     }
 }

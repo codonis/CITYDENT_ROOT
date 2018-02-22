@@ -1,3 +1,6 @@
+$.validate({
+    form: '#contactForm'
+});
 //Main Slider
 $(document).ready(function () {
 
@@ -57,6 +60,9 @@ $(document).ready(function () {
 });
 
 
+$('.btn_hamburger').click(function () {
+   $('.navigation_mobile').toggleClass('open');
+});
 $(function () {
     $.scrollify({
         section: ".section",

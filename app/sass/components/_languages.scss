@@ -2,7 +2,21 @@
     position: relative;
     padding: 5px 0;
     min-height: 30px;
+    width: 16.66%;
+    float: right;
     top: 5px;
+    @include breakpoint(larges) {
+        position: absolute;
+        top: 35px;
+        right: 0;
+    }
+    @include breakpoint(mediums) {
+        top: 8px;
+        right: 30px;
+    }
+    @include breakpoint(smalls){
+        display: none;
+    }
     &__icons {
         position: absolute;
         left: auto;
