@@ -60,8 +60,13 @@ $(document).ready(function () {
 });
 
 
+if ($(window).width() < 769) {
+    $('img').each(function () {
+        $(this).attr('src', $(this).attr('data-mobile-image'));
+    });
+}
 $('.btn_hamburger').click(function () {
-   $('.navigation_mobile').toggleClass('open');
+   $('.navigation_mobile,.btn_hamburger').toggleClass('open');
 });
 $(function () {
     $.scrollify({
@@ -71,10 +76,21 @@ $(function () {
         updateHash: false,
         easing: "easeOutExpo",
     });
+    if($(window).width() < 769){
+        $.scrollify.destroy();
+    }
 });
-$('#scrollBtn').click(function () {
+$('#scrolla').click(function () {
     $.scrollify.move(2);
 });
+$('#mScrolla').click(function () {
+    $('html,body').animate({
+        scrollTop: $('.boxes-mobile').offset().top - 30
+    },500);
+
+
+});
+
 //Side Bar
 $('.side-panel__menu-list-item--hamburger').click(function () {
     $(this).toggleClass('active');

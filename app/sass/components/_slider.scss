@@ -8,6 +8,9 @@
             height: $header_content - 4.9vh;
         }
         height: $header_content;
+        @include breakpoint(smalls) {
+            height: $header_mobile_content;
+        }
     }
     .nivo-caption {
         font-size: $font_size_slide_caption;
@@ -24,6 +27,26 @@
             padding: 40px 30px 40px 70px;
             font-size: $font_size_slide_caption / 1.3;
         }
+        @include breakpoint(smalls) {
+            z-index: 6;
+            width: auto;
+            max-width: 58.666%;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: normal;
+            left: 30px;
+            background-color: $brand_coffe;
+            bottom: 50px;
+        }
+    }
+    & .nivo-controlNav{
+        @include breakpoint(smalls) {
+            position: relative;
+            bottom: 60px;
+            z-index: 7;
+
+        }        
     }
     & .nivo-controlNav a {
         &,
@@ -37,6 +60,10 @@
         width: 20px;
         height: 20px;
         margin: 0 8px;
+        @include breakpoint(smalls) {
+            width: 15px;
+            height: 15px;
+        }
         &.active {
             background: lighten($brand_gray, 30%);
         }

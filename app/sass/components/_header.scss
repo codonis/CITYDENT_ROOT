@@ -10,16 +10,17 @@
     }
     @include breakpoint(smalls) {
         min-height: $header_mobile_height;
+        padding-top: 20px;
     }
-    &__logo{
+    &__logo {
         padding-top: 0px;
-        width:33.333%;
+        width: 33.333%;
         float: left;
         @include breakpoint(smalls) {
             width: 100%;
             text-align: center;
         }
-        img{
+        img {
             @include breakpoint(mediums) {
                 width: 200px;
             }
@@ -35,7 +36,6 @@
         font-style: italic;
         position: relative;
         top: 14px;
-
         @include breakpoint(mediums) {
             font-size: $font_logo_size - 4;
         }
@@ -43,7 +43,5 @@
             font-size: $font_logo_size - 9;
             top: 7px;
         }
-
-
     }
 }

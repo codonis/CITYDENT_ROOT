@@ -22,6 +22,10 @@
         border-radius: 50%;
         left: 50%;
         transform: translateX(-50%); //transition: all .3s;
+        @include breakpoint(smalls) {
+            width: 5px;
+            height: 5px;
+        }
         &--start,
         &--end,
         &--center {
@@ -32,9 +36,15 @@
         }
         &--center {
             top: 15px;
+            @include breakpoint(smalls) {
+                top: 10px;
+            }
         }
         &--end {
             top: 30px;
+            @include breakpoint(smalls) {
+                top: 20px;
+            }
         }
         .side-panel__menu-list-item:hover & {
             background-color: $brand_color; //transition: background-color ease .3s;
@@ -54,17 +64,30 @@
         padding: 15px;
         box-shadow: rgba(0, 0, 0, 0.3) -2px 0px 2px;
         pointer-events: all;
+        @include breakpoint(smalls) {
+            padding: 5px;
+            top: 60px;
+        }
         &-list {
             padding-left: 0;
+            @include breakpoint(smalls) {
+                margin-bottom: 0;
+            }
         }
         &-list-item {
             margin: 15px 0;
             text-align: center;
+            @include breakpoint(smalls) {
+                margin: 5px 0;
+            }
             &--hamburger {
                 margin: 5px 15px;
                 min-height: 45px;
                 position: relative;
                 cursor: pointer;
+                @include breakpoint(smalls) {
+                    min-height: 25px;
+                }
             }
             &--phone {
                 margin-bottom: 0;
@@ -79,6 +102,9 @@
                     height: 2px;
                     left: -90%;
                     transform: rotate(45deg);
+                    @include breakpoint(smalls) {
+                        top: 12px;
+                    }
                 }
                 .side-panel__hamburger-bullet--center {
                     transition: all .3s;

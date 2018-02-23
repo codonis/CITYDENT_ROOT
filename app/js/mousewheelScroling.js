@@ -6,4 +6,7 @@ $(function () {
         updateHash: false,
         easing: "easeOutExpo",
     });
+    if($(window).width() < 769){
+        $.scrollify.destroy();
+    }
 });

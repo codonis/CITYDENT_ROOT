@@ -7,6 +7,7 @@ $brand_pink: #f5dee7;
 $brand_green: #dee9c4;
 $brand_violet: #e6ccf1;
 $brand_latte: #cd6d57;
+$brand_coffe: rgba(#6d5731, 0.42);
 
 //font families
 $font_head: 'SinkinSansLt', Helvetica,Arial,sans-serif;
@@ -30,13 +31,15 @@ $zindex_side_panel: 7;
 //widths
 $sidebar_width : 321px;
 $mobile_menu: 200px;
+$news_mobile_img_width: 115px;
 
 //heights
 $header_content: 88.6vh;
+$header_mobile_content: 74.7vh;
 $hero_height: 410px;
 $about_hero_height: 77vh;
 $about_lg_hero_height: 66vh;
-$header_mobile_height:80px;
+$header_mobile_height:60px;
 
 //border sizes
 $triangle_border_size: 10px;

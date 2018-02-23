@@ -1,6 +1,9 @@
 .tab-slider {
     margin-top: 60px;
     margin-bottom: 60px;
+    @include breakpoint(smalls) {
+        display: none;
+    }
 }
 
 .tabs {

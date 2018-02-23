@@ -9,6 +9,11 @@
         font-weight: bold;
         font-size: 16px;
         position: relative;
+        @include breakpoint(smalls) {
+            font-size: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
         &_color_1{
             background-color: $brand_blue;
             color:darken($brand_blue, 60%);

@@ -8,6 +8,9 @@
 .seperator {
     width: 80%;
     margin: 0 auto;
+    @include breakpoint(smalls) {
+        display: none;
+    }
     &_full {
         width: 100%;
     }

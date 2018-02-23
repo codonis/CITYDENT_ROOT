@@ -43,6 +43,10 @@
             text-decoration: none;
             transition: width ease .3s;
             background-color: $brand_gray;
+            .navigation_mobile & {
+                bottom: -1px;
+                background-color: $brand_color;
+            }
         }
         &:hover {
             color: $brand_color;
@@ -50,16 +54,21 @@
             &:after {
                 transition: width ease .3s;
                 width: 80%;
+                .navigation_mobile & {
+                    width: 100%;
+                }
             }
         }
-        .navigation_mobile &{
+        .navigation_mobile & {
             display: block;
+            padding: 10px 15px 10px 30px;
+            border-bottom: 1px solid lighten($brand_gray, 30%);
         }
     }
     &_footer {
         text-align: center;
     }
-    &.navigation_mobile{
+    &.navigation_mobile {
         display: none;
         position: absolute;
         width: $mobile_menu;
@@ -68,11 +77,11 @@
         background-color: #fff;
         z-index: 9;
         top: $header_mobile_height;
-        &.open{
+        height: 99vh;
+        box-shadow: rgba(0, 0, 0, .7) 0 5px 10px;
+        &.open {
             left: 0;
         }
-
- 
         @include breakpoint(smalls) {
             display: block;
         }

@@ -3,6 +3,9 @@
     margin-top: 60px;
     margin-bottom: 120px;
     min-height: 310px;
+    @include breakpoint(smalls) {
+        display: none;
+    }
     &__prev,
     &__next {
         width: 46px;

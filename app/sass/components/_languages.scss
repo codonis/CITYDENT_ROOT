@@ -14,18 +14,31 @@
         top: 8px;
         right: 30px;
     }
-    @include breakpoint(smalls){
+    @include breakpoint(smalls) {
         display: none;
+        &.languages_mobile {
+            display: block;
+        }
     }
     &__icons {
         position: absolute;
         left: auto;
         right: 20px;
         display: inline-block;
+        .languages_mobile & {
+            right: 0;
+            width: 100%;
+            text-align: center;
+        }
     }
     &_icon {
         display: inline-block;
         margin-right: 3px;
         margin-left: 3px;
+    }
+    &.languages_mobile {
+        width: 100%;
+        position: relative;
+        right: 0;
     }
 }

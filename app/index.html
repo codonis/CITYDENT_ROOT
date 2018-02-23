@@ -13,15 +13,16 @@
         <!-- Slider start -->
         <div class="slider-wrapper section theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="images/Layer_1871.jpg" data-thumb="images/Layer_1871.jpg" alt="" title="Donec imperdiet et ante facilisis, in varius lectussit amet eleifend interdum. "
-                />
+                <img data-mobile-image="images/mobil-slider-1.png" src="images/Layer_1871.jpg" alt="" title="Donec imperdiet et ante facilisis, in varius lectussit amet eleifend interdum. ">
                 <a href="#">
-                    <img src="images/slide2.png" data-thumb="images/slide2.png" alt="" title="Lorem ipsum dolor sit amet consectetur." />
+                    <img data-mobile-image="images/mobil-slider-2.png" src="images/slide2.png" alt="" title="Lorem ipsum dolor sit amet consectetur."
+                    />
                 </a>
-                <img src="images/slide3.png" data-thumb="images/slide3.png" alt="" title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                <img data-mobile-image="images/mobil-slider-3.png" src="images/slide3.png" alt="" title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 />
             </div>
-            <a id="scrollBtn" class="scrolla btn-scrolla"></a>
+            <a id="scrolla" class="scrolla btn-scrolla"></a>
+            <a id="mScrolla" class="scrolla-mobile btn-scrolla"></a>
         </div>
         <!-- Slider end -->
         <!-- Boxes start -->
@@ -143,7 +144,116 @@
         <div class="container">
             <hr class="seperator">
         </div>
-        @import "news_slider.html" 
+        @import "news_slider.html"
+
+        <!-- 
+            ################################################################################################################################################################
+            #### Mobile contents start here
+            ################################################################################################################################################################
+        -->
+
+        <!-- Boxes for mobile start -->
+        <div data-section-name="boxesMobile" class="boxes-mobile container">
+            <div class="boxes-mobile__box boxes-mobile__box_color1">
+                <img src="images/implant-dis.png" alt="" class="boxes-mobile__img">
+                <h3 class="boxes-mobile__title">
+                    Citydent İstanbul İmplant Tedavisi
+                </h3>
+                <a href="#" class="boxes-mobile__link">
+                    Detaylar
+                    <i class="boxes-mobile__icon fa fa-arrow-right"></i>
+                </a>
+
+            </div>
+            <div class="boxes-mobile__box boxes-mobile__box_color2">
+                <img src="images/tartar-dis.png" alt="" class="boxes-mobile__img">
+                <h3 class="boxes-mobile__title">
+                    Estetik Diş/Protez: Zirkonyum Tam Seramik, LamineInlay-Onlay Beyazlatma
+
+                </h3>
+                <a href="#" class="boxes-mobile__link">
+                    Detaylar
+                    <i class="boxes-mobile__icon fa fa-arrow-right"></i>
+                </a>
+
+            </div>
+            <div class="boxes-mobile__box boxes-mobile__box_color3">
+                <img src="images/call-center.png" alt="" class="boxes-mobile__img boxes-mobile__img_bottom_0">
+                <h3 class="boxes-mobile__title">
+                    Fiyat Bilgi Danışma
+
+                </h3>
+                <a href="#" class="boxes-mobile__link">
+                    Detaylar
+                    <i class="boxes-mobile__icon fa fa-arrow-right"></i>
+                </a>
+
+            </div>
+            <div class="boxes-mobile__box boxes-mobile__box_color4">
+                <img src="images/dolgu-aleti.png" alt="" class="boxes-mobile__img boxes-mobile__img_bottom_0 boxes-mobile__img_right_0">
+                <h3 class="boxes-mobile__title">
+                    Citydent Diş Tedavileri
+
+                </h3>
+                <a href="#" class="boxes-mobile__link">
+                    Detaylar
+                    <i class="boxes-mobile__icon fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+        <!-- Boxes for mobile end -->
+        <!-- News start -->
+
+        <div class="news-mobile">
+            <h3 class="news-mobile__title">Haberler</h3>
+            <a href="#" class="news-mobile__box clearfix">
+                <div class="news-mobile__img-wr">
+                    <img src="images/news_box1.png" alt="" class="news-mobile__img">
+                </div>
+                <div class="news-mobile__box-title">
+                    Fusce facilisis et lacus
+                </div>
+                <i class="news-mobile__icon fa fa-chevron-right"></i>
+            </a>
+            <a href="#" class="news-mobile__box clearfix">
+                <div class="news-mobile__img-wr">
+                    <img src="images/news_box2.png" alt="" class="news-mobile__img">
+                </div>
+                <div class="news-mobile__box-title">
+                    Fusce facilisis et lacus
+                </div>
+                <i class="news-mobile__icon fa fa-chevron-right"></i>
+            </a>
+            <a href="#" class="news-mobile__box clearfix">
+                <div class="news-mobile__img-wr">
+                    <img src="images/news_box3.png" alt="" class="news-mobile__img">
+                </div>
+                <div class="news-mobile__box-title">
+                    Fusce facilisis et lacus
+                </div>
+                <i class="news-mobile__icon fa fa-chevron-right"></i>
+            </a>
+            <a href="#" class="news-mobile__box clearfix">
+                <div class="news-mobile__img-wr">
+                    <img src="images/news_box4.png" alt="" class="news-mobile__img">
+                </div>
+                <div class="news-mobile__box-title">
+                    Fusce facilisis et lacus
+                </div>
+                <i class="news-mobile__icon fa fa-chevron-right"></i>
+            </a>
+        </div>
+        <!-- News end -->
+
+
+
+        <!-- 
+            ################################################################################################################################################################
+            #### Mobile contents end here
+            ################################################################################################################################################################
+        -->
+
         @import "links.html"
 
     </div>
