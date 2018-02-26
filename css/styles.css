@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6, p {
   right: -321px;
   background-color: transparent;
   height: 88.6vh;
-  z-index: 7;
+  z-index: 8;
   -webkit-transition: right .3s;
   transition: right .3s;
   pointer-events: none; }
@@ -476,6 +476,26 @@ h1, h2, h3, h4, h5, h6, p {
         -webkit-transform: rotate(-45deg) translateY(-100%);
                 transform: rotate(-45deg) translateY(-100%);
         opacity: 1; }
+  .btn_hamburger__text {
+    position: absolute;
+    left: 40px;
+    top: 2px;
+    color: #494949;
+    font-size: 14px; }
+  .btn_hamburger_contact {
+    top: 15px;
+    left: 10px; }
+
+.btn_up {
+  position: absolute;
+  color: #494949;
+  right: 20px;
+  top: 15px;
+  font-size: 9px; }
+  .btn_up__icon {
+    text-align: center; }
+    .btn_up__icon .fa {
+      font-size: 9px; }
 
 .boxes {
   margin-top: 60px; }
@@ -1067,57 +1087,111 @@ h1, h2, h3, h4, h5, h6, p {
     right: 15px;
     color: #494949; }
 
+.footer-mobile {
+  display: none;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  z-index: 9;
+  background-color: #fff; }
+  @media (max-width: 768px) {
+    .footer-mobile {
+      display: block; } }
+  .footer-mobile.sticky {
+    width: 100%;
+    position: fixed; }
+
+@media (max-width: 768px) {
+  .navigation.navigation-mobile_footer {
+    position: absolute;
+    top: calc( (-100vh) + (5px));
+    width: 100%;
+    left: -100vw;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    z-index: 8; }
+    .navigation.navigation-mobile_footer .navigation__list {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .navigation.navigation-mobile_footer .navigation__link {
+      width: 100vw;
+      text-align: center;
+      font-size: 18px;
+      color: #494949;
+      text-transform: initial;
+      font-weight: bold;
+      min-height: 35px;
+      border: none;
+      text-align: left;
+      padding-left: 100px;
+      margin-bottom: 20px; }
+      .navigation.navigation-mobile_footer .navigation__link::first-letter {
+        text-transform: uppercase; }
+  .navigation-mobile__icon {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 0; } }
+
 .arma-logo-dark {
   background-image: url(../images/sprite.png);
   background-position: -37px -120px;
   width: 100px;
   height: 44px; }
 
+.calendar-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -72px -266px;
+  width: 35px;
+  height: 36px; }
+
 .cell-phone {
   background-image: url(../images/sprite.png);
-  background-position: -164px -141px;
+  background-position: -174px -28px;
   width: 10px;
   height: 16px; }
 
 .clock {
   background-image: url(../images/sprite.png);
-  background-position: -184px -141px;
+  background-position: -185px -44px;
   width: 10px;
   height: 10px; }
 
 .contact-location {
   background-image: url(../images/sprite.png);
-  background-position: -139px 0px;
+  background-position: -139px -225px;
   width: 25px;
   height: 36px; }
 
 .contact-mail-icon {
   background-image: url(../images/sprite.png);
-  background-position: -164px 0px;
+  background-position: -139px -135px;
   width: 30px;
   height: 30px; }
 
 .contact-phone-icon {
   background-image: url(../images/sprite.png);
-  background-position: -67px -266px;
+  background-position: -139px -165px;
   width: 30px;
   height: 30px; }
 
 .contact-skype-icon {
   background-image: url(../images/sprite.png);
-  background-position: -86px -204px;
+  background-position: -139px -195px;
   width: 30px;
   height: 30px; }
 
 .contact-viber-icon {
   background-image: url(../images/sprite.png);
-  background-position: -56px -204px;
+  background-position: -139px -72px;
   width: 30px;
   height: 33px; }
 
 .contact-watsapp-icon {
   background-image: url(../images/sprite.png);
-  background-position: -37px -266px;
+  background-position: -139px -105px;
   width: 30px;
   height: 30px; }
 
@@ -1127,15 +1201,39 @@ h1, h2, h3, h4, h5, h6, p {
   width: 40px;
   height: 40px; }
 
+.find-on-map-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -37px -266px;
+  width: 35px;
+  height: 36px; }
+
 .fr_flag {
   background-image: url(../images/sprite.png);
-  background-position: -164px -30px;
+  background-position: -139px -291px;
   width: 30px;
   height: 30px; }
 
+.get-price-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -92px -204px;
+  width: 35px;
+  height: 36px; }
+
+.information-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -56px -204px;
+  width: 36px;
+  height: 36px; }
+
+.instant-call-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -139px 0px;
+  width: 35px;
+  height: 36px; }
+
 .location {
   background-image: url(../images/sprite.png);
-  background-position: -174px -141px;
+  background-position: -184px -28px;
   width: 10px;
   height: 14px; }
 
@@ -1147,19 +1245,25 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mail {
   background-image: url(../images/sprite.png);
-  background-position: -164px -118px;
+  background-position: -56px -240px;
   width: 30px;
   height: 23px; }
 
+.map-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -139px -36px;
+  width: 35px;
+  height: 36px; }
+
 .phone {
   background-image: url(../images/sprite.png);
-  background-position: -164px -90px;
+  background-position: -174px 0px;
   width: 28px;
   height: 28px; }
 
 .sa_flag {
   background-image: url(../images/sprite.png);
-  background-position: -164px -60px;
+  background-position: -107px -266px;
   width: 30px;
   height: 30px; }
 
@@ -1177,13 +1281,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .spec-list-icon, .spec__list-item:before {
   background-image: url(../images/sprite.png);
-  background-position: -164px -157px;
+  background-position: -174px -44px;
   width: 11px;
   height: 10px; }
 
 .uk_flag {
   background-image: url(../images/sprite.png);
-  background-position: -97px -266px;
+  background-position: -139px -261px;
   width: 30px;
   height: 30px; }
 
@@ -1215,8 +1319,22 @@ h1, h2, h3, h4, h5, h6, p {
 .pb60 {
   padding-bottom: 60px; }
 
-.form {
+.form, .footer-mobile {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
           box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px; }
+
+.no-scroll {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
+
+.no-scroll-f-menu {
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,8 +14,8 @@
     &_full {
         width: 100%;
     }
-    &_space{
-        border:none;
+    &_space {
+        border: none;
         margin: 30px auto;
     }
 }
@@ -31,4 +31,20 @@
 
 %standart_box_shadow {
     box-shadow: rgba(0, 0, 0, .2) 0 0 20px;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.no-scroll-f-menu {
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
 }

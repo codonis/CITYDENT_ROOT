@@ -16,7 +16,6 @@
                 right: 18%;
             }
         }
-        
     }
     &_submit {
         background: $brand_color;
@@ -73,6 +72,30 @@
                     transform: rotate(-45deg) translateY(-100%);
                     opacity: 1;
                 }
+            }
+        }
+        &__text {
+            position: absolute;
+            left: 40px;
+            top: 2px;
+            color: $brand_dark_gray;
+            font-size: 14px;
+        }
+        &_contact{
+            top: 15px;
+            left: 10px;
+        }
+    }
+    &_up {
+        position: absolute;
+        color: $brand_dark_gray;
+        right: 20px;
+        top: 15px;
+        font-size: 9px;
+        &__icon {
+            text-align: center;
+            .fa{
+                font-size: 9px;
             }
         }
     }

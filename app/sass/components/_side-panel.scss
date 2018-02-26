@@ -7,7 +7,7 @@
     right: -$sidebar_width; //height: 335px;
     background-color: transparent;
     height: $header_content;
-    z-index: $zindex_side_panel;
+    z-index: $zindex_side_panel + 1;
     transition: right .3s;
     pointer-events: none;
     &_open {

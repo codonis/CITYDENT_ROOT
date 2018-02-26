@@ -1,0 +1,16 @@
+.footer-mobile {
+    display: none;
+    height: 50px;
+    @extend %standart_box_shadow;
+    position: relative;
+    bottom: 0;
+    z-index: 9;
+    background-color: #fff;
+    @include breakpoint(smalls) {
+        display: block;
+    }
+    &.sticky {
+        width: 100%;
+        position: fixed;
+    }
+}

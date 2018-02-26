@@ -2,6 +2,11 @@
 $('.side-panel__menu-list-item--hamburger').click(function () {
     $(this).toggleClass('active');
     $('.side-panel').toggleClass('side-panel_open');
+    $('#navigationMobileFooter,#btnHamburgerContact').removeClass('open');
+    $('#navigationMobile,#btnHamburger').removeClass('open');
+    $('body').removeClass('no-scroll');
+    $('html').removeClass('no-scroll-f-menu');
+    
 });
 
 $(window).scroll(function(e){ 

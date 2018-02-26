@@ -1,0 +1,39 @@
+@include breakpoint(smalls) {
+    .navigation.navigation-mobile {
+        &_footer {
+            position: absolute;
+            top: calc( (-100vh) + (5px));
+            width: 100%;
+            left: -100vw;
+            box-shadow: unset;
+            z-index: 8;
+            .navigation__list {
+                @include vAlign;
+            }
+            .navigation__link {
+                width: 100vw;
+                text-align: center;
+                font-size: 18px;
+                color: $brand_dark_gray;
+                text-transform: initial;
+                font-weight: bold;
+                min-height: 35px;
+                border:none;
+                text-align: left;
+                padding-left: 100px;
+                margin-bottom: 20px;
+                &::first-letter{
+                    text-transform: uppercase;    
+                }
+            }
+        }
+    }
+    .navigation-mobile {
+        &__icon {
+            display: block;
+            position: absolute;
+            left: 40px;
+            top: 0;
+        }
+    }
+}

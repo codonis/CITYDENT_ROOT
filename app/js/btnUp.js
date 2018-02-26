@@ -1,11 +1,7 @@
-$('#scrolla').click(function () {
-    $.scrollify.move(2);
-});
-$('#mScrolla').click(function () {
+$('#btnUp').click(function () {
     $('html,body').animate({
-        scrollTop: $('.boxes-mobile').offset().top - 30
-    }, 500);
-
+        scrollTop: 0
+    },500);
     $('body').removeClass('no-scroll');
     $('html').removeClass('no-scroll-f-menu');
     $('#navigationMobile,#btnHamburger').removeClass('open');
