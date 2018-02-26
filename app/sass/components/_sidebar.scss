@@ -1,6 +1,10 @@
 .sidebar {
     margin-bottom: 40px;
     padding-left: 30px;
+    display: block;
+    @include breakpoint(smalls) {
+        display: none;
+    }
     &__title,
     &__menu-link {
         color: $brand_dark_gray;

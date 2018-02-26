@@ -1,10 +1,18 @@
 .news-mobile {
     display: none;
-    @include breakpoint(smalls){
+    @include breakpoint(smalls) {
         display: block;
     }
     font-family: $font_head;
     color: $brand_dark_gray;
+    &_wide {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+    &_middle {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
     &__title {
         padding: 15px;
         font-size: 18px;
@@ -18,6 +26,10 @@
         display: block;
         position: relative;
         padding-bottom: 30px;
+        &_seperator {
+            padding-top: 30px;
+            border-top: 1px solid $brand_gray;
+        }
     }
     &__img-wr {
         float: left;
@@ -33,11 +45,19 @@
         @include vAlign;
         left: $news_mobile_img_width + 30;
         color: $brand_dark_gray;
+        padding-bottom: 30px;
+        .detail & {
+            padding-bottom: 0;
+        }
     }
     &__icon {
         position: absolute;
         @include vAlign;
-        right: 15px;
+        right: 5px;
         color: $brand_dark_gray;
+        padding-bottom: 30px;
+        .detail & {
+            padding-bottom: 0;
+        }
     }
 }

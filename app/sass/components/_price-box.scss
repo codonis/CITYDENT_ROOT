@@ -1,0 +1,40 @@
+.price-box {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    bottom: -70px;
+    width: 100%;
+    z-index: 10;
+    transition: .3s ease, opacity .3s .3s ease;
+    &__inner {
+        padding: 25px 10px;
+        background-color: $brand_papirus;
+        color: $brand_ground;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 80px;
+        width: 100%;
+        display: none;
+        font-size: 15px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+        border-radius: 4px;
+        @include breakpoint(smalls) {
+            display: block;
+        }
+    }
+    &__icon {
+        @include vAlign;
+        right: 10px;
+    }
+    &_hidden {
+        transition: .3s ease, opacity .3s .3s ease;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+}

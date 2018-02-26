@@ -1,18 +1,20 @@
 .btn {
     &-scrolla {
         position: absolute;
-        bottom: 12%;
+        bottom: 15%;
         right: 31%;
         z-index: $zindex_side_panel - 1;
         cursor: pointer;
         &.scrolla-mobile {
             display: none;
         }
+        @include breakpoint(mediums) {
+            bottom: 25%;
+        }
         @include breakpoint(smalls) {
             display: none;
             &.scrolla-mobile {
                 display: block;
-                bottom: 25%;
                 right: 18%;
             }
         }
@@ -81,7 +83,7 @@
             color: $brand_dark_gray;
             font-size: 14px;
         }
-        &_contact{
+        &_contact {
             top: 15px;
             left: 10px;
         }
@@ -94,7 +96,7 @@
         font-size: 9px;
         &__icon {
             text-align: center;
-            .fa{
+            .fa {
                 font-size: 9px;
             }
         }

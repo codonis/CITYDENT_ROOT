@@ -1,5 +1,4 @@
-//icons start
-@include sprites($spritesheet-sprites);
+
 //positions
 .relative {
     position: relative;
@@ -23,6 +22,9 @@
 .p_big {
     font-family: $font_head;
     font-size: 14px;
+    @include breakpoint(smalls) {
+        line-height: 1.6;
+    }
 }
 
 .pb60 {

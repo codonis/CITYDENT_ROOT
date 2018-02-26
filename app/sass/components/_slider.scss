@@ -2,12 +2,16 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
+    
     .nivoSlider {
         box-shadow: unset;
         @include breakpoint(huges) {
             height: $header_content - 4.9vh;
         }
         height: $header_content;
+        @include breakpoint(mediums) {
+            height: 69.7vh;
+        }
         @include breakpoint(smalls) {
             height: $header_mobile_content;
         }

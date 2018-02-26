@@ -13,11 +13,18 @@
         padding-left: 40px;
         position: relative;
         line-height: 2;
+        @include breakpoint(smalls) {
+            line-height: 1.5;
+        }
         &:before{
             content: ' ';
-            @include vAlign;
+            position: absolute;
+            top: 8px;
             @extend .spec-list-icon;
             left: 20px;
+            @include breakpoint(smalls) {
+                top: 5px;
+            }
         }
     }
 }

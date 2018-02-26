@@ -1,5 +1,9 @@
 .breadcrumbs{
+    display: block;
     margin-bottom: 40px;
+    @include breakpoint(smalls) {
+        display: none;
+    }
     &__list-item{
         display: inline-block;
     }

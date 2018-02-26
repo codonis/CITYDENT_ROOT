@@ -71,7 +71,7 @@
     &.navigation_mobile {
         display: none;
         position: absolute;
-        width: $mobile_menu;
+        width: $mobile_menu - 20;
         left: - $mobile_menu;
         transition: .3s ease;
         background-color: #fff;
@@ -80,7 +80,7 @@
         height: 99vh;
         box-shadow: rgba(0, 0, 0, .7) 0 5px 10px;
         &.open {
-            left: 0;
+            left: 0px;
         }
         @include breakpoint(smalls) {
             display: block;

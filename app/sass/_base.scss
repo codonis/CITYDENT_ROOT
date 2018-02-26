@@ -2,6 +2,9 @@ html,body{
     font-family: $font_copy;
     position: relative;
     overflow-x: hidden;
+    &.detail{
+        padding-bottom: 30px;
+    }
 }
 ul{
     list-style: none;

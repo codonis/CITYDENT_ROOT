@@ -3,6 +3,10 @@
     text-align: center;
     min-height: $hero_height;
     overflow: hidden;
+    @include breakpoint(smalls) {
+        min-height: 24vh;
+        margin-bottom: 20px;
+    }
     .about-us & {
         min-height: $about_lg_hero_height;
         @include breakpoint(huges) {
@@ -12,6 +16,10 @@
     &__img {
         min-height: $hero_height;
         @include align;
+        @include breakpoint(smalls) {
+            min-height: 0;
+            width: 100%;
+        }
         .about-us & {
             min-height: $about_lg_hero_height;
             @include breakpoint(huges) {
@@ -23,8 +31,13 @@
         background-color: $brand_color;
         color: #fff;
         padding: 30px 15px;
+        font-family: $font_head;
         margin: 0;
         position: absolute;
         bottom: 0;
+        @include breakpoint(smalls) {
+            font-size: 15px;
+            padding: 10px 15px;
+        }
     }
 }
