@@ -1,4 +1,7 @@
-//Side Bar
+
+
+
+/* Side Bar */
 $('.side-panel__menu-list-item--hamburger').click(function () {
   $(this).toggleClass('active');
   $('.side-panel').toggleClass('side-panel_open');

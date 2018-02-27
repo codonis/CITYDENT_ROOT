@@ -7,7 +7,7 @@
     top: 5px;
     @include breakpoint(larges) {
         position: absolute;
-        top: 30px;
+        top: 35px;
         right: 0;
     }
     @include breakpoint(mediums) {
@@ -40,25 +40,5 @@
         width: 100%;
         position: relative;
         right: 0;
-    }
-    &__name {
-        @extend %title;
-        top: -8px;
-    }
-    &__link {
-        display: block;
-        margin-bottom: 5px;
-        &-item{
-            display: inline-block;
-            position: relative;
-        }
-        &_right {
-            text-align: right;
-            right: 0;
-        }
-        &_left {
-            text-align: left;
-            left: 0;
-        }
     }
 }

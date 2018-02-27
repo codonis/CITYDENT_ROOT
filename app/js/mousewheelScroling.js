@@ -1,3 +1,6 @@
+
+
+/* Mouse Wheel Scrolling */
 $(function () {
     $.scrollify({
         section: ".section",

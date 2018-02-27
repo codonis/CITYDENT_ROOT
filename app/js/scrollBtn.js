@@ -1,3 +1,6 @@
+
+
+/* Scroll Button */
 $('#scrolla').click(function () {
     $.scrollify.move(2);
 });

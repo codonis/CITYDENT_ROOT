@@ -32,5 +32,8 @@
     transform: translateX(-50%);
     position: absolute;
     bottom: 0px;
+    &-dark{
+        display: block;
+    }
 
 }

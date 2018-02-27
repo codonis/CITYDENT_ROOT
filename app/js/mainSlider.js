@@ -1,4 +1,6 @@
-//Main Slider
+
+
+/* Main Slider */
 $(document).ready(function () {
 
     $('#slider').nivoSlider({

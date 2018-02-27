@@ -46,7 +46,7 @@
         left: $news_mobile_img_width + 30;
         color: $brand_dark_gray;
         padding-bottom: 30px;
-        .detail & {
+        .news-mobile__box_seperator & {
             padding-bottom: 0;
         }
     }
@@ -56,7 +56,7 @@
         right: 5px;
         color: $brand_dark_gray;
         padding-bottom: 30px;
-        .detail & {
+        .news-mobile__box_seperator & {
             padding-bottom: 0;
         }
     }

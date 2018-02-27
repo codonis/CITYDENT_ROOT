@@ -1,5 +1,5 @@
-.form{
-    width:500px;
+.form {
+    width: 500px;
     min-height: 750px;
     @extend %standart_box_shadow;
     float: right;
@@ -7,21 +7,24 @@
     right: 120px;
     padding: 60px 60px 100px 120px;
     z-index: 0;
-    *{
+    @include breakpoint(mediums) {
+        right: 6%;
+    }
+    * {
         font-family: $font_head;
     }
-    &__text{
+    &__text {
         font-size: 16px;
     }
-    &__input{
+    &__input {
         margin: 5px 0;
         height: 40px;
         padding: 5px;
         width: 100%;
-        border:1px solid $brand_gray;
+        border: 1px solid $brand_gray;
         border-radius: 9px;
     }
-    &__textarea{
+    &__textarea {
         @extend .form__input;
         height: auto;
     }

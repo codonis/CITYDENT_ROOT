@@ -1,0 +1,55 @@
+.list-mobile {
+    margin-top: 30px;
+    display: none;
+    @include breakpoint(smalls) {
+        display: block;
+    }
+    &__item {
+        font-size: 12px;
+        font-family: $font_head;
+        line-height: 2.2;
+        font-weight: bold;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        position: relative;
+        &:before {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        &_green {
+            &:before {
+                background-color: $brand_green;
+            }
+        }
+        &_yellow {
+            &:before {
+                background-color: $brand_yellow;
+            }
+        }
+        &_violet {
+            &:before {
+                background-color: $brand_violet;
+            }
+        }
+        &_blue {
+            &:before {
+                background-color: $brand_blue;
+            }
+        }
+        &_dark-green {
+            &:before {
+                background-color: $brand_dark_green;
+            }
+        }
+        &_light-red {
+            &:before {
+                background-color: $brand_light_red;
+            }
+        }
+    }
+}

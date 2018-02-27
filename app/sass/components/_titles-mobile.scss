@@ -1,0 +1,13 @@
+.subtitle-mobile {
+    display: none;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $brand_dark_gray;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font_head;
+    @include breakpoint(smalls) {
+        display: block;
+    }
+}

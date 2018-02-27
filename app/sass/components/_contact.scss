@@ -17,6 +17,9 @@
         * {
             font-family: $font_head;
         }
+        @include breakpoint(mediums) {
+            left: 6%;
+        }
     }
     &__item {
         padding-left: 25px;

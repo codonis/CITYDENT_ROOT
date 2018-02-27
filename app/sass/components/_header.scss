@@ -16,9 +16,14 @@
         padding-top: 0px;
         width: 33.333%;
         float: left;
+        @include breakpoint(mediums) {
+            padding-top: 4px;
+        }
         @include breakpoint(smalls) {
             width: 100%;
             text-align: center;
+            padding-top: 0;
+            
         }
         img {
             @include breakpoint(mediums) {
@@ -38,10 +43,12 @@
         top: 14px;
         @include breakpoint(mediums) {
             font-size: $font_logo_size - 4;
+            top: 11px;
         }
         @include breakpoint(smalls) {
             font-size: $font_logo_size - 9;
             top: 7px;
+            font-style: normal;
         }
     }
 }

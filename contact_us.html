@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/nivo-slider.css">
 <link rel="stylesheet" href="css/nivo-theme.css">
@@ -21,8 +23,10 @@
     <div class="container-fluid">
 
         <div class="header__logo header-logo">
-            <img src="images/logo.png" alt="">
-            <span class="header-logo__location">İSTANBUL</span>
+            <a href="#">
+                <img src="images/logo.png" alt="">
+                <span class="header-logo__location">İSTANBUL</span>
+            </a>
         </div>
 
         <div class="navigation">
@@ -91,9 +95,34 @@
             </nav>
             <div class="header__languages languages languages_mobile">
                 <div class="languages__icons">
-                    <a href="" class="languages_icon sa_flag"></a>
-                    <a href="" class="languages_icon uk_flag"></a>
-                    <a href="" class="languages_icon fr_flag"></a>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link languages__link_right">
+                                <span class="languages__link-item languages__name">العربية</span>
+                                <span class="languages__link-item languages_icon sa_flag"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link  languages__link_left">
+                                <span class="languages__link-item languages_icon tr_flag"></span>
+                                <span class="languages__link-item languages__name">Türkçe</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link  languages__link_right">
+                                <span class="languages__link-item languages__name">English</span>
+                                <span class="languages__link-item languages_icon uk_flag"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link  languages__link_left">
+                                <span class="languages__link-item languages_icon fr_flag"></span>
+                                <span class="languages__link-item languages__name">Français</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,7 +169,8 @@
                     <div class="contact__item">
                         <span class="contact__icon contact-location"></span>
                         <p class="contact__copy">
-                            Cumhuriyet Caddesi No:32 Kat: 1 Taksim / İstanbul (Taksim Divan Oteli Yanı, Taksim Gezi Parkı Metro çıkışı tarafında 100
+                            Cumhuriyet Caddesi No:32 Kat: 1 
+                            <br>Taksim / İstanbul (Taksim Divan Oteli Yanı, Taksim Gezi Parkı Metro çıkışı tarafında 100
                             m. Şişli tarafında)
                         </p>
                     </div>
@@ -364,7 +394,7 @@
                 </div>
             </div>
             <div class="arma-logo">
-                <div class="arma-logo-dark"></div>
+                <a href="#" class="arma-logo-dark"></a>
             </div>
         </div>
     </div>

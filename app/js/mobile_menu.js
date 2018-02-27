@@ -1,3 +1,6 @@
+
+
+/* Mobile Menu */
 $('#btnHamburger').click(function () {
     $('#navigationMobile,#btnHamburger').toggleClass('open');
     $('.side-panel__menu-list-item--hamburger').removeClass('active');

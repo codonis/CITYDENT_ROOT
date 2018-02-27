@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/nivo-slider.css">
 <link rel="stylesheet" href="css/nivo-theme.css">
@@ -21,8 +23,10 @@
     <div class="container-fluid">
 
         <div class="header__logo header-logo">
-            <img src="images/logo.png" alt="">
-            <span class="header-logo__location">İSTANBUL</span>
+            <a href="#">
+                <img src="images/logo.png" alt="">
+                <span class="header-logo__location">İSTANBUL</span>
+            </a>
         </div>
 
         <div class="navigation">
@@ -91,9 +95,34 @@
             </nav>
             <div class="header__languages languages languages_mobile">
                 <div class="languages__icons">
-                    <a href="" class="languages_icon sa_flag"></a>
-                    <a href="" class="languages_icon uk_flag"></a>
-                    <a href="" class="languages_icon fr_flag"></a>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link languages__link_right">
+                                <span class="languages__link-item languages__name">العربية</span>
+                                <span class="languages__link-item languages_icon sa_flag"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link  languages__link_left">
+                                <span class="languages__link-item languages_icon tr_flag"></span>
+                                <span class="languages__link-item languages__name">Türkçe</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link  languages__link_right">
+                                <span class="languages__link-item languages__name">English</span>
+                                <span class="languages__link-item languages_icon uk_flag"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="" class="languages__link  languages__link_left">
+                                <span class="languages__link-item languages_icon fr_flag"></span>
+                                <span class="languages__link-item languages__name">Français</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,6 +136,12 @@
     </div>
 </header>
 <!-- Header end -->
+    <div class="price-box price-box_hidden">
+        <a href="#" class="price-box__inner">
+            İmplant tedavisi için hemen fiyat alın
+            <i class="price-box__icon fas fa-times"></i>
+        </a>
+    </div>
     <div class="content relative">
         <!-- Side Panel start -->
 <div class="side-panel side-panel_open">
@@ -183,7 +218,7 @@
         <!-- Hero start -->
 
         <section class="hero">
-            <img data-mobile-image="images/mobil-detail.png" src="images/hero.png" alt="Citydent Hero Image" class="hero__img">
+            <img data-mobile-image="images/dikissiz-implant.png" src="images/hero.png" alt="Citydent Hero Image" class="hero__img">
             <div class="container">
                 <h1 class="hero__title">DİKİŞSİZ İMPLANT</h1>
             </div>
@@ -213,8 +248,112 @@
 
         <section class="section">
             <div class="container">
+                <!-- 
+                    ################################################################################################################################################################
+                    #### Mobile contents start here
+                    ################################################################################################################################################################
+                -->
+                <!-- List Mobile start -->
+                <div class="mt30_xs">
+                    <h2 class="subtitle-mobile">DİKİŞSİZ İMPLANT TEDAVİSİ
+                    </h2>
+                    <ul class="list-mobile">
+                        <li class="list-mobile__item list-mobile__item_green">
+                            Kişiye özel abutment tasarımı ve üretimi
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_yellow">
+                            İmplanttan hemen sonra sabit geçici dişler
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_violet">
+                            Ağız içi ölçülerin üç boyutlu tarayıcılar ile alınması
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_blue">
+                            Açık cerrahiye alternatif olarak kapalı cerrahi
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_dark-green">
+                            Tek aşamada implant altenatifi
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_light-red">
+                            Panaromik röntgenin yanısıra ücretsiz tomogrofik üç boyutlu görüntüleme
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_green">
+                            Özel bilgisayar programlarında implant planlaması
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_yellow">
+                            Elektronik diş renk ölçüm cihazı
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_violet">
+                            CadCam cihazlarında diş altyapı üretimi
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_blue">
+                            Gerekli durumlarda lazer destekli tedavi
+                        </li>
+                        <li class="list-mobile__item list-mobile__item_dark-green">
+                            12 farklı implant seçeneği
+                        </li>
+                    </ul>
+                </div>
+                <!-- List Mobile end -->
+
+                <!-- 
+                    ################################################################################################################################################################
+                    #### Mobile contents end here
+                    ################################################################################################################################################################
+                -->
                 <!-- Copy start -->
 
+                <div class="copy">
+                    <h2 class="spec__title">UYGULAMA ALANLARI</h2>
+                    <p class="copy__p p_big">
+                        <img src="images/pic.png" alt="pic" class="copy__img copy__img_right"> Kaybedilen dişlerin yerine tedavi amacıyla yerleştirilen, bir süre sonra kemik dokusuyla kaynaşan,
+                        doğal bir diş gibi iş görebilen, uygun maddeden yapılmış diş köklerine implant diyoruz.
+                    </p>
+                    <p class="copy__p p_big">
+                        Tek diş eksikliği, birden fazla diş eksikliği ve tam dişsizlik durumlarının tümünde implant uygulanabilir. Yerleştirilecek
+                        alanda yeterli düzeyde kemik olmaması durumda kemik ilave işlemleri ile bir çok vakada başarı ile
+                        implant uygulanabilmektedir.
+                    </p>
+                    <p class="copy__p p_big">
+                        İmplantı vücudun kabul etmemesi gibi bir durum yoktur. İmplant, vücudun herhangi bir reaksiyon göstermediği, alerjik reaksiyonların
+                        ve yan etkilerin olmadığı maddelerden yapılmıştır. İmplant sonrası oluşan sorunlar genelde doğru
+                        planlama ve sonrasında doğru bir tedavinin uygulanmaması ya da hasta kaynaklı diğer problemlerden
+                        kaynaklanır. Tedavi kalitesi ve hastanın ağız diş sağlığına özeni en kritik faktörlerdir. Quisque
+                        a nulla libero. Mauris ut lorem nec magna luctus rutrum. Ut rutrum ex et suscipit tincidunt. Sed
+                        vel interdum libero, dapibus finibus turpis. Donec mattis ultrices mauris, ac porta tortor pretium
+                        ullamcorper. Duis tempor, urna ut rutrum sodales, tortor massa laoreet est, sit amet lacinia.
+                    </p>
+                </div>
+                <!-- Copy end -->
+
+                <!-- 
+                    ################################################################################################################################################################
+                    #### Mobile contents start here
+                    ################################################################################################################################################################
+                -->
+
+
+                <!-- Reference start -->
+                <div class="reference">
+                    <h2 class="spec__title">UYGULAMASINI YAPTIĞIMIZ İMPLANT MARKALARI</h2>
+                    <p class="reference__p p_big">
+                        ITI Straumann (İsviçre), Nobel Biocare (İsveç), Hiossen (Amerika), Osstem (Güney Kore), Bego (Almanya), Tekka (Fransa). Markalar
+                        hakkında detaylı bilgi için implant markaları sayfamızı
+                        <a href="#" class="reference__link">tıklayınız</a>.
+                    </p>
+                </div>
+                <!-- Reference end -->
+
+                <hr class="seperator seperator_full">
+
+                <!-- 
+                    ################################################################################################################################################################
+                    #### Mobile contents end here
+                    ################################################################################################################################################################
+                -->
+
+
+
+                <!-- Copy start -->
                 <div class="copy">
                     <h2 class="spec__title">Kapalı Cerrahi (Dikişsiz İmplant) Kimlere Uygulanabilir?</h2>
                     <p class="copy__p p_big">
@@ -243,12 +382,65 @@
                 </div>
 
                 <!-- Copy end -->
+
+                <!-- 
+                     ################################################################################################################################################################
+                     #### Mobile contents start here
+                     ################################################################################################################################################################
+                 -->
+                <!-- News start -->
+
+                <div class="news-mobile news-mobile_middle">
+                    <h3 class="news-mobile__title">Haberler</h3>
+                    <a href="#" class="news-mobile__box clearfix">
+                        <div class="news-mobile__img-wr">
+                            <img src="images/news_box1.png" alt="" class="news-mobile__img">
+                        </div>
+                        <div class="news-mobile__box-title">
+                            Fusce facilisis et lacus
+                        </div>
+                        <i class="news-mobile__icon fa fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="news-mobile__box clearfix">
+                        <div class="news-mobile__img-wr">
+                            <img src="images/news_box2.png" alt="" class="news-mobile__img">
+                        </div>
+                        <div class="news-mobile__box-title">
+                            Fusce facilisis et lacus
+                        </div>
+                        <i class="news-mobile__icon fa fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="news-mobile__box clearfix">
+                        <div class="news-mobile__img-wr">
+                            <img src="images/news_box3.png" alt="" class="news-mobile__img">
+                        </div>
+                        <div class="news-mobile__box-title">
+                            Fusce facilisis et lacus
+                        </div>
+                        <i class="news-mobile__icon fa fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="news-mobile__box clearfix">
+                        <div class="news-mobile__img-wr">
+                            <img src="images/news_box4.png" alt="" class="news-mobile__img">
+                        </div>
+                        <div class="news-mobile__box-title">
+                            Fusce facilisis et lacus
+                        </div>
+                        <i class="news-mobile__icon fa fa-chevron-right"></i>
+                    </a>
+                </div>
+                <!-- News end -->
+                <!-- 
+                    ################################################################################################################################################################
+                    #### Mobile contents end here
+                    ################################################################################################################################################################
+                 -->
             </div>
         </section>
         <!-- Content section end -->
 
         <!-- News Slider start -->
-<section class="container section news-slider">
+        <section class="container section news-slider">
         <div class="news-slider__arrows">
             <div class="news-slider__prev">
                 <div class="news-slider__arrow arrow-prev"></div>
@@ -296,11 +488,9 @@
 
         </div>
     </section>
-<!-- News Slider end -->
-    
-        <span></span>
+        <!-- News Slider end -->
         <!-- Links start -->
-<section class="container section links">
+        <section class="container section links">
         <div class="row">
             <div class="col-md-6">
                 <a href="#" class="links__link links__link_color_1">Citydent Tedavi Sayfası
@@ -327,8 +517,7 @@
             </div>
         </div>
     </section>
-<!-- Links end -->
-    
+        <!-- Links end -->
     </div>
     <!-- Mobil Footer start -->
 
@@ -465,7 +654,7 @@
                 </div>
             </div>
             <div class="arma-logo">
-                <div class="arma-logo-dark"></div>
+                <a href="#" class="arma-logo-dark"></a>
             </div>
         </div>
     </div>
